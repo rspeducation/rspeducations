@@ -1,0 +1,78 @@
+/* Styles for static informational pages (Privacy, Service, Copyright, Contact, About) */
+.page-wrapper-min {
+  padding: 4rem 2rem;
+  max-width: 980px;
+  margin: 0 auto;
+  color: hsl(var(--rsp-text));
+}
+
+.page-hero {
+  margin-bottom: 1.5rem;
+}
+
+.page-hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-intro {
+  font-size: 1.05rem;
+  color: hsl(var(--rsp-text) / 0.85);
+  line-height: 1.8;
+}
+
+.article {
+  background: hsl(var(--rsp-sidebar-bg));
+  border: 1px solid hsl(var(--rsp-border));
+  padding: 1.75rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 18px rgba(14,20,30,0.04);
+}
+
+.article h2 {
+  color: hsl(var(--rsp-text));
+  margin-top: 0;
+}
+
+.article p, .article li {
+  color: hsl(var(--rsp-text) / 0.9);
+  line-height: 1.8;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.contact-card {
+  background: hsl(var(--rsp-sidebar-bg));
+  border: 1px solid hsl(var(--rsp-border));
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid hsl(var(--rsp-border));
+  margin-bottom: 0.75rem;
+  background: transparent;
+  color: hsl(var(--rsp-text));
+}
+
+.contact-form button {
+  background: hsl(var(--rsp-primary));
+  color: white;
+  padding: 0.8rem 1.25rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}

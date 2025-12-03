@@ -1,0 +1,49 @@
+/* Code Example Container - works with react-syntax-highlighter */
+.code-example {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 250ms ease-in-out;
+}
+
+.code-example:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Code Header */
+.code-header {
+    background: rgba(0, 0, 0, 0.2);
+    color: #e0e0e0;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Override react-syntax-highlighter pre styles */
+.code-example pre {
+    margin: 0 !important;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Scrollbar styling for code blocks */
+.code-example pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+.code-example pre::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.code-example pre::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.code-example pre::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
