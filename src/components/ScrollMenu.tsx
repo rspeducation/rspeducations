@@ -11,11 +11,11 @@ export const ScrollMenu: React.FC = () => {
     { to: '/javascript', text: 'JavaScript' },
     { to: '/computer', text: 'Computer Basics' },
     { to: '/msword', text: 'MS Word' },
-    { to: '/mspowerpoint', text: 'MS Power Point' },
+    { to: '/mspowerpoint/Introduction', text: 'MS Power Point' },
     { to: '/java', text: 'Java', locked: true },
     { to: '/python', text: 'Python', locked: true },
     { to: '/php', text: 'PHP', locked: true },
-    { to: '/react', text: 'React', locked: true}
+    { to: '/react', text: 'React', locked: true }
   ];
 
   const handleLockedClick = (e: React.MouseEvent, text: string) => {

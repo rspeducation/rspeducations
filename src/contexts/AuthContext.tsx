@@ -45,9 +45,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
         const u: User = { uid: 'admin-1', name: 'Admin', email, isAdmin: true };
         persistUser(u);
-        // navigate to admin dashboard
-        window.location.href = '/dashboard/admin';
-        return;
+        return; // Let component handle navigation
       }
 
       // Normal user: validate against stored registry (simple client-side store)
@@ -57,7 +55,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (!found) throw new Error('Invalid credentials');
       const u: User = { uid: `user-${email}`, name: found.name || email.split('@')[0], email };
       persistUser(u);
-      window.location.href = '/dashboard/user';
+      return; // Let component handle navigation
     } finally {
       setLoading(false);
     }
@@ -74,7 +72,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       localStorage.setItem('rsp_users', JSON.stringify(users));
       const u: User = { uid: `user-${email}`, name, email };
       persistUser(u);
-      window.location.href = '/dashboard/user';
+      return; // Let component handle navigation
     } finally {
       setLoading(false);
     }
@@ -97,7 +95,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         localStorage.setItem('rsp_users', JSON.stringify(users));
       }
       persistUser(u);
-      window.location.href = '/dashboard/user';
+      return; // Let component handle navigation
     } finally {
       setLoading(false);
     }
@@ -105,7 +103,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const logout = () => {
     persistUser(null);
-    window.location.href = '/';
+    // Let component handle navigation
   };
 
   return (

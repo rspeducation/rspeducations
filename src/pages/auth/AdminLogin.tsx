@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import '../../style/auth.css';
 import { Header } from '../../components/Header';
 // import { ScrollMenu } from '../../components/ScrollMenu';
@@ -7,11 +7,20 @@ import { UpArrow } from '../../components/UpArrow';
 import { useAuth } from '../../contexts/AuthContext';
 
 const AdminLogin: React.FC = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const { loginWithEmail } = useAuth();
+  const { loginWithEmail, user } = useAuth();
+
+  useEffect(() => {
+    if (user?.isAdmin) {
+      navigate('/dashboard/admin', { replace: true });
+    } else if (user) {
+      navigate('/dashboard/user', { replace: true });
+    }
+  }, [user, navigate]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,6 +29,7 @@ const AdminLogin: React.FC = () => {
     setLoading(true);
     try {
       await loginWithEmail(email.trim(), password);
+      // Navigation handled by useEffect when user state updates
     } catch (err: any) {
       setError(err?.message || 'Invalid admin credentials. Please check your email and password.');
     } finally {

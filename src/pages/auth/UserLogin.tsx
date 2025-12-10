@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import '../../style/auth.css';
 import { Header } from '../../components/Header';
 // import { ScrollMenu } from '../../components/ScrollMenu';
@@ -7,12 +7,19 @@ import { UpArrow } from '../../components/UpArrow';
 import { useAuth } from '../../contexts/AuthContext';
 
 const UserLogin: React.FC = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const { loginWithEmail, loginWithGoogle } = useAuth();
+  const { loginWithEmail, loginWithGoogle, user } = useAuth();
+
+  useEffect(() => {
+    if (user) {
+      navigate(user.isAdmin ? '/dashboard/admin' : '/dashboard/user', { replace: true });
+    }
+  }, [user, navigate]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,6 +30,7 @@ const UserLogin: React.FC = () => {
     setLoading(true);
     try {
       await loginWithEmail(email.trim(), password);
+      // Navigation handled by useEffect when user state updates
     } catch (err: any) {
       setError(err?.message || 'Login failed. Please check your credentials.');
     } finally {
@@ -35,6 +43,7 @@ const UserLogin: React.FC = () => {
     setLoading(true);
     try {
       await loginWithGoogle();
+      // Navigation handled by useEffect when user state updates
     } catch (err: any) {
       setError(err?.message || 'Google sign-in failed. Please try again.');
     } finally {

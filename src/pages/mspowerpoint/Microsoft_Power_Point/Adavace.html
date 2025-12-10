@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RSP Education</title>
+
+	                      <!-- web page logos  -->
+ <link rel="website icon" type="png" href="https://computer.rspeducation.in/Images/rapeducation.png">
+ <link rel="icon" type="png" href="https://computer.rspeducation.in/Images/rapeducation.png">
+ <link rel="apple-touch-icon" href="https://computer.rspeducation.in/Images/rapeducation.png">
+ <!-- <link rel="stylesheet" href="https://computer.rspeducation.in/style.css"> -->
+ <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WBB2FQ5Q"></script><script src="https://kit.fontawesome.com/cfa60462a9.js" crossorigin="anonymous"></script>
+
+<meta name="google-site-verification" content="MOv_SmFs-AQigQ2xzw8xJBXs4ITUau_4Weo3A1ALFro">
+
+ <!--<link rel="stylesheet" type="text/css" href="files.rspeducation.in/main.css">-->
+
+<style>
+body{
+    background:#fff3f3;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.locked i {
+    position: revert;
+}
+.hidden{
+    display: none;
+}
+ li{
+    font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-align: justify;
+}
+ p {
+    font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-align: justify;
+     font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 2px; /* You can adjust this width according to your preference */
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #697179; /* You can adjust the color */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #34383c; /* You can adjust the color */
+}
+/* Fixed header styles */
+header {
+    text-align: center;
+    align-items: center;
+    background-color:#fff3f3;
+    color: white;
+    position: fixed;
+    padding: 1px 0 1px 0;
+    margin: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; 
+    /* Set a higher z-index to keep it above other elements */
+}
+
+/* Sticky header for scrolling effect */
+.header {
+    display: none;
+ 
+}
+header h1{
+  /*padding: -10px 0 0 0;*/
+  margin: 15px 0;
+  color: #282A35;
+  
+}
+/*Styling for header img*/
+    header img{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 1px 2px;
+        color: white;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+.rsp-btn {
+    float: left;
+    border: none;
+    outline: none;
+    box-shadow: 2px lightblue;
+    background-color: #fff3f3;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+}
+.Sign-btn{
+    float: right;
+    display: ;
+    border: none;
+    outline: none;
+    box-shadow: 2px lawngreen ;
+    background-color: lightblue;
+    font-size: 18px;
+    padding: 12px 10px;
+    cursor: pointer; /* Add this to show pointer cursor on hover */
+    
+/*  opacity: 0;*/
+}
+.rsp-btn:hover{
+   background-color:#e5e5e7;
+/*   border-radius: 20px;*/
+}
+
+.Sign-btn:hover {
+    background-color: #e0ffe0; /* Add a different background color on hover */
+    color: #006400; /* Add a different text color on hover */
+}
+.rsp-signIn{
+    border-radius: 0 20px   20px 0;
+    position: fixed;
+    top: 6px;
+    right: 45px;
+
+}
+.rsp-signUp{
+    border-radius:  20px 0 0 20px;
+    background-color: lightgreen;
+    position: fixed;
+    top: 6px;
+    right: 110px;
+
+}
+.main-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.main-nav a{
+    display: flex;
+    padding: 0;
+    margin: 0 5px;
+    background-color: #fff3f3;
+    font-size: 15px;
+}
+.sub{
+    margin: 0 10px;
+}
+.fa-youtube{
+    color: rgb(205, 32,32);
+}
+.fa-facebook{
+    color: #4267B2;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.fa-instagram{
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+.fa-microphone{
+    background-color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+/*Styling for darkMode Toggle*/
+button#darkModeToggle {
+  padding: 5px 5px;
+  font-size: 10px;
+  background-color: #fff3f3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  float: right;
+
+}
+.fa-circle-half-stroke{
+    font-size: 40px;
+    position: fixed;
+    right: 0;
+    top: 7px;
+    color: #282A35;
+}
+.dark-mode .fa-circle-half-stroke{
+    color: #fff;
+}
+.dark-mode header{
+    background-color: #545a61;
+}
+
+button#darkModeToggle:hover {
+  color: #1876f2;
+}
+
+.dark-mode {
+  background-color: #545a61;
+}
+
+.dark-mode .rsp-btn {
+    background-color: #545a61;
+    color: #fff;
+}
+.dark-mode .main-nav h1{
+ background-color : #545a61;
+ color: #fff;
+}
+.dark-mode #imageLink{
+    background-color: #545a61;
+}
+.dark-mode .main-nav a {
+    background-color: #282a35;
+    color: #fff;  
+}
+.dark-mode .main-nav a:hover{
+    background-color: #595d72;
+    color: #fff;
+}
+.dark-mode .scroll-menu{
+    background-color: #282a35;
+}
+.dark-mode .scroll-menu a:hover {
+    background-color: #595d72;;
+}
+/* Add this CSS to your existing styles */
+.YoutubeChannels-Subtopics,
+.Tutorials-Subtopics,
+.projects-Subtopics {
+    margin-top: 40px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.YoutubeChannels-Subtopics a,
+.Tutorials-Subtopics a,
+.projects-Subtopics a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.YoutubeChannels-Subtopics a:hover,
+.Tutorials-Subtopics a:hover,
+.projects-Subtopics a:hover {
+    background-color: #f2f2f2;
+}
+.nav-item:hover .YoutubeChannels-Subtopics,
+.nav-item:hover .Tutorials-Subtopics,
+.nav-item:hover .projects-Subtopics {
+    display: block;
+}
+
+.scroll-menu {
+        background-color: #545a61;
+        overflow: auto;
+        white-space: nowrap;
+        margin-bottom: -5px;
+        outline: none;
+    }
+
+    .scroll-menu-container {
+        display: flex;
+    }
+
+    .scroll-menu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+    .scroll-menu a:hover {
+        background-color: #626263;
+        border-bottom: 1px solid red;
+    }
+
+/*Main contenct styling*/
+.main-content{
+    display: flex;
+    margin: 0;
+}
+.content-info{
+
+}
+/* Center-align the content in .left-info */
+.left-info {
+    float: left; /* Remove the float property */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding-top: 50px ;
+}
+.left-info p{
+    color: #282A35;
+    margin-bottom: 50%;
+    font-size: 20px;
+    text-align: center;
+}
+.content-info h1{
+    font-size: 50px;
+    margin: 10px;
+}
+.content-info p{
+    margin: 5px;
+}
+/* Apply styles to the Learn-btn class */
+.Learn-btn {
+    font-size: 20px;
+    background-color: #5db761;
+    color: #fff;
+    border-radius: 30px;
+    border: 0px solid green;
+    padding: 9px 20px !important;
+    text-decoration: none; /* Remove default link underline */
+    outline: none; /* Remove the outline on focus */
+    margin-top: 50%;
+
+}
+.Learn-btn:hover{
+    color: #000;
+    background-color: #e5d335;
+}
+.fa-beat{
+    position: ;
+    color: red;
+}
+/*Content styling for index*/
+
+.RSP-code span {
+    display: inline-block;
+    padding: 2px 0 ;
+}
+.RSP-code{
+        width: 30%;
+        float: right;
+        margin-top: 5px;
+        border-radius: 2%;
+        padding: 20px 20px;
+        margin: 20px 60px 0 0;
+        background-color: #9d9d9d; 
+        color: #000;
+}
+ .dark-mode
+ .RSP-code{
+        background-color: #697179; 
+}
+ .dark-mode .RSP-code{
+     color:#fff;
+ }
+.examples-code {
+    background: #fff3f3;
+    font-size: 12px;
+    border-radius: 10px;
+     height: 300px;
+    padding: 0px;
+}
+.index {
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.examples-index {
+    background: #fff3f3;
+    color: #000;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 300px;
+    padding: 5px;
+}
+ .dark-mode 
+.examples-index {
+    background: #000;
+    color: #fff;
+}
+
+.RSP-Contect {
+    height: 450px;
+    width: 100%;
+    background-color: lightblue;
+    margin: 0;
+    padding-top: -10px;
+}
+
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #545a61;
+    padding: 0;
+}
+
+
+/* Center content within .rsp-content */
+.rsp-content {
+    margin: auto;
+    text-align: center;
+}
+
+/* Style for the heading */
+.rsp-learn-code {
+    margin-top: 10px;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Style for the subheading */
+.rsp-learntocode {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Style for the search form */
+.example {
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+    position: revert;
+
+}
+
+/* Style for the search input */
+.example input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    float: left;
+    font-size: 16px;
+    outline: none;
+    
+}
+
+/* Style for the search button */
+.example button {
+    width:20%;
+    padding: 10px;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style for the search results */
+#listofsearchresults {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none; /* Initially hide the results */
+}
+    .container input[type="text"] {
+  width: 100%;
+  padding: 30px;
+  font-size: 16px;
+  border-radius: 10px 0 0 10ox;
+
+}
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.container li {
+  margin: 10px 0;
+}
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.dark-mode .fa-magnifying-glass{
+    color: #000;
+}
+.container i.fa-magnifying-glass {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.container input[type="text"] {
+  padding:  15px 20px ; /* Adjust the padding to make room for the icon */
+}
+ /* Style for the search results */
+ 
+ #resultsList {
+     position: absolute;
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     margin-left: 70px;
+     width: 30%;
+ }
+ 
+ #resultsList li {
+     background-color: #f8f8f8;
+     border: 1px solid #ddd;
+     margin: 0px;
+     padding: 10px;
+ }
+ 
+ #resultsList li:hover {
+     background-color: lightblue;
+     border: 1px solid #ddd;
+ }
+ 
+ #resultsList a {
+     text-decoration: none;
+     color: #333;
+     font-weight: bold;
+ }
+ /* Style for hiding and showing results */
+ 
+ #resultsList.empty {
+     display: none;
+ }
+ 
+ #resultsList li:nth-child(n+6) {
+     display: none;
+ }
+ 
+ #resultsList.show-all li {
+     display: block;
+ }
+ /* Add this style to your existing styles or in a style tag in the head section */
+ 
+ .focused {
+     background-color: #f2f2f2;
+     /* Add your desired background color for focused item */
+ }
+
+ 
+
+
+/* Style for the "Not Sure Where To Begin?" link */
+.learntocodeh4 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style for the link on hover */
+.learntocodeh4 a:hover {
+    text-decoration: underline;
+}
+
+.HTML{
+       height: 550px;
+        width: 100%;
+        background-color: lightblue;
+        margin: 0;
+        padding-top: -10px;
+}
+.CSS{
+        background-color: lightgray;
+}
+.JavaScript{
+        background-color: lightyellow;
+}
+.java{
+        background-color: lawngreen;
+}
+.python{
+        background-color: lightskyblue;
+}
+.Computer-Basics{
+        background-color: lightcoral;
+}
+.MS-Word{
+        background-color: lightgray;
+}
+
+
+
+
+ code {
+    background-color: #fff;
+    border-left: 5px solid green;
+    padding: 5px 10px;
+    overflow: auto;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0;
+    height: 300px;
+}
+
+
+ 
+
+
+/* Footer Styles */
+footer {
+    width: 99%;
+    color: white;
+    display:inline-block;
+    margin: 0 ;
+    background-color: #282A35;
+  padding: 6px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    
+
+}
+.footer-container a:hover{
+    color: #7fcac3;
+    border-bottom: 1px solid #1876f2;
+}
+.social-icons {
+  margin-bottom: 5px;
+}
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+}
+.social-icons ul li {
+  display: flex;
+  align-items: center;
+  margin: 17px 10px;
+}
+.social-icons ul li i{
+  margin-rightL:20px;
+}
+.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #1876f2;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 20px; /* Updated right margin */
+}
+.social-icons ul li {
+  margin-bottom: 10px;
+  text-align: left;
+  margin-right: 10px;
+}
+#socialLinksList li {
+  font-size: 17px;
+}
+.social-icons ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+.social-icons ul li:hover {
+  background-color: #3f3f3f;
+  border-radius: 10px;
+}
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.features ul li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.features ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.contact h3 {
+  margin-bottom: 5px;
+  margin-right: 30px;
+}
+.contact p {
+    margin-bottom: 20px;
+  margin-right: 10px;
+}
+.contact a {
+    color: #fff;
+}
+/* Font Awesome Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+.footer {
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 10px 0;
+}
+.footer p{
+    text-align: center;
+}
+.rspeducation-policy  li{
+    display: inline-block;
+    margin-right: 8px;
+    list-style: unset;
+}
+.rspeducation-policy a{
+    color: #d6d8e0;
+    border-bottom: 1px solid #fff;
+}
+.rspeducation-policy a:hover{
+    color: #fff;
+}
+.download-btn{
+    display: inline-block;
+    background-color: #275efe;
+    color: #fff;
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.download-btn i{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.up-arrow {
+  display: none; /* Hide the arrow by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+/*  background-color: #275efe;*/
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 999;
+}
+.dark-mode .up-arrow {
+    background-color: #275efe;
+}
+.up-arrow i {
+  font-size: inherit;
+}
+/* Show the arrow when the user scrolls beyond a certain point */
+.show-up-arrow {
+  display: block;
+}
+
+
+
+/* Add more styles for color will be Colo full for css tags   ===================================================================  */
+
+/* Additional styling for code blocks */
+.hljs-selector-tag {
+    color: #d42929; /* Red color for selector tags */
+}
+
+.hljs-attribute {
+    color: #994500; /* Brown color for attributes */
+}
+
+
+
+.hljs-string {
+    color: #1a1a66; /* Dark blue color for strings */
+}
+
+.hljs-comment {
+    color: #808080; /* Gray color for comments */
+}
+
+.hljs-number {
+    color: #4caf50; /* Green color for numbers */
+}
+.dark-mode  .hljs-attribute {
+    color: #ff9800; /* Brown color for attributes */
+}
+
+
+
+/* Add more styles for color will be Colo full for js colorfull   ===================================================================  */
+
+.attributecolor{
+        color: #fff;
+    }
+    .jscolor{
+        color: #fff;
+    }
+    .jskeywordcolor{
+        color: #48b58c;
+
+    }
+    .jspropertycolor{
+        color: #33c9dc; 
+    }
+    /* Style for the parent <div> */
+.p-4 {
+    padding: 5px;
+}
+
+
+/* Style for the <code> element */
+.code {
+
+    display: block;
+    background-color: #f0f0f0;
+    padding: 1px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.whitespace-pre {
+    white-space: pre;
+}
+
+.hljs {
+    font-size: 14px;
+}
+
+.hljs-keyword {
+    color: #007bff;
+}
+
+.hljs-title {
+    color: #28a745;
+}
+
+.hljs-function, .hljs-params {
+    color: #c7254e;
+}
+
+.hljs-comment {
+    color: #6c757d;
+}
+
+.hljs-type, .hljs-variable, .hljs-operator, .hljs-number, .hljs-string {
+    color: #b152b4;
+}
+/* Style for the parent <div> */
+.p-4 {
+    padding: 1px;
+}
+
+
+
+.whitespace-pre {
+    white-space: pre;
+}
+
+.hljs {
+    font-size: 14px;
+}
+
+.hljs-meta, .hljs-comment {
+    color: #6a737d;
+}
+
+.hljs-keyword {
+    color: #f88e86;
+}
+
+.hljs-type, .hljs-title, .hljs-built_in, .hljs-number {
+    color: #7fcac3;
+}
+
+.hljs-params {
+    color: #032f62;
+}
+pre {
+    overflow: auto;
+}
+       /* Reset some default styles for better presentation */
+.hljs {
+  display: block;
+  margin: 0;
+}
+
+/* Styling for HTML tags */
+.hljs-tag {
+  color: #d42929; /* Red color for HTML tags */
+}
+
+/* Styling for HTML attributes */
+.hljs-attr {
+  color: #994500; /* Brown color for HTML attributes */
+}
+
+/* Styling for strings */
+.hljs-string {
+  color: #1a1a66; /* Dark blue color for strings */
+}
+
+/* Styling for comments */
+.hljs-comment {
+  color: #808080; /* Gray color for comments */
+}
+
+/* Styling for meta, doctype, and other keywords */
+.hljs-meta, .hljs-keyword {
+  color: #0055a4; /* Blue color for keywords */
+}
+
+/* Styling for HTML entity names */
+.hljs-name {
+  color: #000080; /* Navy color for entity names */
+}
+
+
+/* Styling for the document structure (e.g., doctype, html, head, title, body) */
+.hljs-name.hljs-section {
+  color: #0055a4;
+}
+
+/* Styling for the document structure (e.g., head, body) */
+.hljs-name.hljs-title {
+  color: #1a1a66;
+}
+
+/* Add more styles for color will be Colo full for dark mood   ===================================================================  */
+.dark-mode .text-decoration{
+    background-color: #282a35;
+}
+
+.dark-mode .examples-section{
+    background-color: #3f4348;
+}
+.dark-mode .rsp-example-code{
+     background-color: #282a35;
+}
+
+.dark-mode code{
+        background-color: #282a35;
+}
+.dark-mode .hljs-name{
+    color: #ed4b82;
+}
+/* Styling for HTML tags */
+.dark-mode .hljs-tag {
+  color: #00a9be; /* Red color for HTML tags */
+}
+/* Styling for strings */
+.dark-mode .hljs-string {
+  color: #4fba18 ; /* Dark blue color for strings */
+}
+/* Styling for HTML attributes */
+.dark-mode .hljs-attr {
+  color: #a9be00; /* Brown color for HTML attributes */
+}
+
+
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 1130px) and (max-width: 1236px) {
+    .Youtube-hide{
+        display: none;
+    }
+
+}
+
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 1000px) and (max-width: 1130px) {
+     .Youtube-hide{
+        display: none;
+    }
+    .rsp-Apps, .RSP-Software{
+        margin: 0;
+        padding: 0;
+    }
+     .rsp-btn{
+        padding: 0 5px;
+    }
+        .HTML {
+        padding-top:   -20px;
+    }
+
+}
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 900px) and (max-width: 1000px) {
+     .Youtube-hide, 
+     .Projects-hide,
+     .Tutorials-hide {
+        display: none;
+    }
+        .rsp-Apps, .RSP-Software{
+        margin: 0;
+        padding: 0 5px;
+    }
+     .rsp-btn{
+        padding: 0 5px;
+    }
+        .HTML {
+        padding-top:   -20px;
+    }
+        .footer-container{
+        display: inline-block;
+    }
+    .social-icons ul li {
+        display: inline-block;
+        text-align: center;
+    }
+    #socialLinksList li {
+      font-size: 0px;
+    }
+    .social-icons ul li:hover {
+      background-color: none;
+      color: #1876f2;
+    }
+    .features ul li {
+        text-align: center;
+    }
+    .contact p{
+        text-align: center;
+    }
+
+
+}
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 800px) and (max-width: 900px) {
+     .Youtube-hide, 
+     .Projects-hide,
+     .Tutorials-hide,
+     .RSP-Software {
+        display: none;
+    }
+        .rsp-Apps, .RSP-Software{
+        margin: 0;
+        padding: 0;
+    }
+     .rsp-btn{
+        padding: 0 5px;
+    }
+    .Search {
+        padding-bottom: -20px;
+    }
+        .HTML {
+        padding-top:   -20px;
+    }
+        .footer-container{
+        display: inline-block;
+    }
+    .social-icons ul li {
+        display: inline-block;
+        text-align: center;
+    }
+    #socialLinksList li {
+      font-size: 0px;
+    }
+    .social-icons ul li:hover {
+      background-color: none;
+      color: #1876f2;
+    }
+    .features ul li {
+        text-align: center;
+    }
+    .contact p{
+        text-align: center;
+    }
+     footer{
+        width: 98%;
+     }
+
+
+}
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 700px) and (max-width: 800px) {
+     .Youtube-hide, 
+     .Projects-hide,
+     .Tutorials-hide,
+     .RSP-Software,
+     .RSP-code-editor {
+        display: none;
+    }
+    .rsp-Apps, .RSP-Software{
+        margin: 0;
+        padding: 0;
+    }
+     .rsp-btn{
+        padding: 0 5px;
+    }
+    .Sign-btn{
+
+    }
+
+
+}
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 600px) and (max-width: 700px) {
+     .Youtube-hide, 
+     .Projects-hide,
+     .Tutorials-hide,
+     .RSP-Software,
+     .RSP-code-editor,
+     .rsp-Apps {
+      display: none;
+    }
+
+     .rsp-btn{
+        margin: 0;
+        padding: 0 5px;
+    }
+    .sub{
+        margin: 10px;
+    }
+    .Sign-btn{
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 5px;
+/*  opacity: 0;*/
+}
+    .rsp-signUp{
+        right: 100px;
+    }
+    .fa-circle-half-stroke{
+    font-size: 35px;
+    margin-top: 5px;
+}
+}
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 500px) and (max-width: 600px) {
+     .Youtube-hide, 
+     .Projects-hide,
+     .Tutorials-hide,
+     .RSP-Software,
+     .RSP-code-editor,
+     .rsp-Apps {
+      display: none;
+    }
+    .rsp-Apps, .RSP-Software{
+        margin: 0;
+        padding: 0;
+    }
+    .sub{
+        margin: 5px;
+    }
+    .Sign-btn{
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 0;
+/*  opacity: 0;*/
+}
+    .rsp-signUp{
+        right: 100px;
+    }
+    .fa-circle-half-stroke{
+    font-size: 35px;
+    margin: 5px;
+}
+}
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 400px) and (max-width: 500px) {
+    header h1{
+  /*padding: -10px 0 0 0;*/
+  margin: 10px 0;
+  padding: 0;
+  color: #000;
+}
+/*Styling for header img*/
+    header img{
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin: 0;
+        color: white;
+        overflow: hidden;
+        padding: 0;
+    }
+    .Youtube-Name-hide,
+     .Youtube-hide, 
+     .Projects-hide,
+     .Tutorials-hide,
+     .RSP-Software,
+     .RSP-code-editor,
+     .rsp-Apps {
+      display: none;
+    }
+    .sub{
+        margin: 5px 3px 5px 0;
+    }
+
+    .Sign-btn{
+    font-size: 15px;
+    padding: 8px 5px ;
+    margin: 2px 0;
+    
+/*  opacity: 0;*/
+}
+    .rsp-signUp{
+        display: none;
+    }
+     .rsp-signIn{
+        right: 35px;
+        border-radius: 20px;
+    }
+    .fa-circle-half-stroke{
+    font-size: 35px;
+    margin: 0;
+    }
+    .RSP-Contect {
+    height: 70vh;
+    width: 100%;
+    margin: 0;
+}
+
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #545a61;
+    padding: 0;
+}
+.HTML{
+        height: 85vh;
+        width: 100%;
+        background-color: lightblue;
+        margin: 0;
+        padding-top: -10px;
+}
+
+    .RSP-code{
+    display: none;
+    }
+.left-info{
+        width: 100%;
+    }
+.left-info p{
+    color: #282A35;
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+    .footer-container{
+        display: inline-block;
+    }
+    .social-icons ul li {
+        display: inline-block;
+        text-align: center;
+    }
+    #socialLinksList li {
+      font-size: 0px;
+    }
+    .social-icons ul li:hover {
+      background-color: none;
+      color: #1876f2;
+    }
+    .features ul li {
+        text-align: center;
+    }
+    .contact p{
+        text-align: center;
+    }
+     footer{
+        width: 97%;
+     }
+
+}
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 250px) and (max-width: 400px) {
+    header h1{
+  /*padding: -10px 0 0 0;*/
+  margin: 10px 0;
+  color: #000;
+}
+/*Styling for header img*/
+    header img{
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin: 1px 2px;
+        color: white;
+        overflow: hidden;
+    }
+    .Youtube-Name-hide,
+    .rsp-projects,
+     .Youtube-hide, 
+     .Projects-hide,
+     .Tutorials-hide,
+     .RSP-Software,
+     .RSP-code-editor,
+     .rsp-Apps {
+      display: none;
+    }
+    .sub{
+        margin: 6px 0px;
+    }
+
+    .Sign-btn{
+    font-size: 15px;
+    padding: 7px;
+    margin: 6px 0;   
+/*  opacity: 0;*/
+    }
+    .rsp-signUp{
+        display: none;
+    }
+     .rsp-signIn{
+        right: 35px;
+        border-radius: 20px;
+    }
+    .fa-circle-half-stroke{
+    font-size: 30px;
+    margin: 6px 0;
+    }
+.RSP-Contect {
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+}
+
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #545a61;
+    padding: 0;
+}
+.HTML{
+        height: 70vh;
+        width: 100%;
+        background-color: lightblue;
+        margin: 0;
+        padding-top: -10px;
+}
+.left-info{
+        width: 100%;
+    }
+.left-info p{
+    color: #282A35;
+    margin-bottom: 0px;
+    font-size: 18px;
+    text-align: center;
+}
+    /* Style for the search results */
+#resultsList {
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 20px 10% 70px;
+  width: 70%;
+  
+}
+
+#resultsList li {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+#resultsList a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#resultsList a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style for hiding and showing results */
+#resultsList .empty {
+  display: none;
+}
+
+#resultsList li:nth-child(n+6) {
+  display: none;
+}
+
+#resultsList.show-all li {
+  display: block;
+}
+
+
+    .RSP-code{
+        display: none;
+    }
+    .left-info{
+        width: 100%;
+    }
+
+    .footer-container{
+        display: inline-block;
+    }
+    .social-icons ul li {
+        display: inline-block;
+        text-align: center;
+    }
+    #socialLinksList li {
+      font-size: 0px;
+    }
+    .social-icons ul li:hover {
+      background-color: none;
+      color: #1876f2;
+    }
+    .features ul li {
+        text-align: center;
+    }
+    .contact p{
+        text-align: center;
+    }
+     footer{
+        width: 97%;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 480px) and (max-width: 800px) {
+.download-btn{
+    display: inline-block;
+    background-color: #275efe;
+    color: #fff;
+    padding: 15px 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.footer-container{
+    display: inline-block;
+}
+.social-icons ul li {
+    display: inline-block;
+    text-align: center;
+}
+#socialLinksList li {
+  font-size: 0px;
+}
+.social-icons ul li:hover {
+  background-color: none;
+  color: #1876f2;
+}
+.features ul li {
+    text-align: center;
+}
+.contact p{
+    text-align: center;
+}
+ footer{
+    width: 97%;
+ }
+}
+/*   ----------------------------------------------------------------------------------- */
+@media (min-width: 220px) and (max-width: 200px) {
+    header{
+        width: 100%;
+    }
+     .RSP-code-editor,
+     .RSP-Software, 
+     .rsp-Saftwares, 
+     .rsp-Apps{
+        display: none;
+    }
+    .rsp-signUp,
+    .rsp-signIn{
+        display: none;
+    }
+
+.fa-solid{
+    margin:  10px 5px;
+}
+.fa-bars{
+    margin-top: -100px;
+}
+.main-nav-text-hide{
+    display: none;
+}
+.RSP-code{
+    display: none;
+}
+
+.fa-circle-half-stroke{
+    font-size: 50px;
+}
+.menu{
+    display: block;
+}
+
+.menu{
+  display: block;
+}
+/* Active menu styles */
+  .menu.active {
+   display: block;
+ }
+
+/* left-sidebar */
+.left-sidebar {
+  width: 50%;
+  position: absolute;
+}
+/* Center-align the content in .left-info */
+.left-info {
+    float: left; /* Remove the float property */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px ;
+}
+.left-info p{
+    color: #000;
+    margin-bottom: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+.content-info h1{
+    font-size: 50px;
+    margin: 10px;
+}
+.content-info p{
+    margin: 5px;
+}
+
+ .download-btn{
+    display: inline-block;
+    background-color: #275efe;
+    color: #fff;
+    padding: 15px 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.footer-container{
+    display: inline-block;
+}
+.social-icons ul li {
+    display: inline-block;
+    text-align: center;
+}
+#socialLinksList li {
+  font-size: 0px;
+}
+.social-icons ul li:hover {
+  background-color: none;
+  color: #1876f2;
+}
+.features ul li {
+    text-align: center;
+}
+.contact p{
+    text-align: center;
+}
+ footer{
+    width: 97%;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add your existing CSS styles here */
+
+/* Add this CSS to your existing styles */
+/*@media screen and (max-width: 1000px) {
+    header {
+        width: 100%;
+        position: static;
+        text-align: left;
+    }
+
+    .main-nav {
+        flex-direction:column ;
+        align-items: center;
+        margin: 0;
+        
+    }
+
+    .nav-item {
+        display: none;
+        position: relative;
+    }
+
+    .rsp-btn i {
+        margin-left: 5px;
+    }
+
+    .Tutorials-Subtopics,
+    .projects-Subtopics,
+    .YoutubeChannels-Subtopics {
+        position: static;
+        display: none;
+        width: 100%;
+        margin-top: 0;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .Tutorials-Subtopics a,
+    .projects-Subtopics a,
+    .YoutubeChannels-Subtopics a {
+        padding: 10px;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="" id="imageLink">
+        <img id="image" src="https://computer.rspeducation.in/Images/rapeducation.png">
+                <h1 id="rspeducation-main-title">RSP Education</h1>
+            </a>
+
+            <div class="nav-item">
+                <button class="rsp-tutorials rsp-btn sub"></button>
+                <div class="Tutorials-Subtopics">
+                </div>
+            </div>
+            <div class="nav-item">
+            <button class="rsp-projects rsp-btn sub"><i class="fa-solid fa-caret-down"></i></button>
+                <div class="projects-Subtopics"></div>
+            </div>
+
+			<div class="nav-item">
+			    <button class="rsp-youtube-channels rsp-btn sub"> <i class="fa-solid fa-caret-down"></i></button>
+			    <div class="YoutubeChannels-Subtopics">
+			    </div>
+			</div>
+
+          
+            <a href=""><button class="RSP-code-editor rsp-btn"></button></a>
+            <a href=""><button class="RSP-Software rsp-btn"></button></a>
+            <a href=""><button class="rsp-Apps rsp-btn"></button></a>
+            <a href=""><button class="rsp-signIn Sign-btn"></button></a>
+            <a href=""><button class="rsp-signUp Sign-btn"></button></a>
+
+            <i class="fa-solid fa-circle-half-stroke" id="darkModeToggle"></i>
+            
+        </nav>
+
+        <div class="scroll-menu" title="Tutorial"></div>
+   
+    </header>
+
+
+    <!-- Left Sidebar -->
+    <div class="left-sidebar menu">
+        <div class="left-sidebar-links" title="Topic"></div>
+    </div>
+    
+
+        <div class="nav-item" >
+            <div class='rsp-menu-hide'><i class="fa-solid fa-bars" id="toggle-menu"></i>
+            <i style="display: none;" class="fa-solid fa-times" id="close-menu" title="open toggle-menu"></i>
+            </div>               
+        </div>
+
+
+<section class="Search RSP-Contect">
+    <div class="rsp-content">
+        <h1 class="rsp-learn-code">RSP Education</h1>
+        <h3 class="rsp-learntocode" style="color: lightyellow;">
+            <i class="fa fa-logo rsp-hide" style="color:#FFC0C7!important;margin-right:20px;z-index:1;font-size:36px!important;vertical-align:bottom"></i>
+            The Indian largest Online Learning Platform.
+        </h3>
+        <br>
+        <!-- search.php -->
+        <form class="example" method="get" action="https://www.google.co.in/search" target="_blank" style="margin:auto;">
+    
+            <div class="container">
+                <input type="text" id="searchInput" name="q" placeholder="Search..." title="Search what you want!"   class="ga-fp" autocomplete="off" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this)">
+                    <i class="fa-solid fa-microphone"></i>
+                <input type="hidden" name="sitesearch" value="rspeducation.in" />
+            <button type="submit" id="learntocode_searchbtn"><i id="learntocode_searchicon" class="fa fa-search ga-fp"></i></button>
+             
+            </div>
+        </form>
+
+        <ul id="resultsList" ></ul>
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        <h4 class="learntocodeh4">
+            <a>Hello, What Do You Want To Learn?</a>
+        </h4>
+        <div id="listofsearchresults"></div>
+        
+    </div>
+</section>
+
+	
+
+
+
+
+<section class="content-info rsp-html HTML">
+	 <svg style="background-color:lightblue; margin-top:-20px;" width="100%" height="90"   viewBox="0 0 100 100"			preserveAspectRatio="none">
+        <path id="wavepath" d="M0,0  L100,0C35,150 25,0 0, 100 110z" fill="#545a61"></path>
+	</svg>
+
+<div class="left-info">
+<h1>HTML</h1>
+<p> HTML: Unveil the secrets of web development with Hypertext Markup Language.</p>
+
+<a href="#"><button class="Learn-btn locked">Learn HTML <i class="fa-solid fa-lock "></i></button></a>
+</div>
+ <div class="RSP-code  rsp-html-info">
+ 	<h3 class="index">HTML Example:</h3>
+<div class="examples-code">
+<pre id="code">
+<code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTML Comment Example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- h1 heading to center: This is a comment. --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>This is heading 1<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>This is heading 2<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code>
+
+</pre>
+</div>
+ </div>    
+</section>
+
+
+
+<section class="content-info rsp-css CSS RSP-Contect">
+<div class="left-info">
+	<h1>CSS</h1>
+	<p> CSS: Style your web pages like a pro with Cascading Style Sheets.</p>
+<a href=""><button class="Learn-btn locked">Learn CSS <i class="fa-solid fa-lock "></i></button> </a>
+</div>
+
+ <div class="RSP-code notranslate rsp-css-info">
+ 	<h3 class="index">CSS Example:</h3>
+ 	<div class="examples-code">
+ <pre id="code">
+<code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Arial'</span>, sans-serif;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#4285f4</span>; <span class="hljs-comment">/* Google Blue */</span>
+}
+
+<span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#34a853</span>; <span class="hljs-comment">/* Google Green */</span>
+}
+
+</code>
+</pre>
+</div>
+
+
+</div>
+</section>
+
+
+
+
+		
+		<section class="JavaScript content-info RSP-Contect">
+		<div class="left-info">
+<h1 style="font-size: 30px;">JavaScript</h1>
+<p> Javascript: Unleash the power of scripting to create interactive web content.
+</p>
+<a href="#"><button class="Learn-btn locked">Learn JavaScript <i class="fa-solid fa-lock "></i></button></a>
+</div>
+ <div class="RSP-code notranslate rsp-JavaScript-info ">
+ 	<h3 class="index">JavaScript Example:</h3>
+<div class="examples-code">
+ 
+<div class="htmlHigh">
+<pre><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"message"</span>&gt;</span>Click the button!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"clickButton"</span>&gt;</span>Click Me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  
+  
+    <span class="hljs-comment">// JavaScript code</span>
+ <span class="hljs-keyword">var</span> messageElement = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"message"</span>);
+ <span class="hljs-keyword">var</span> clickButton = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"clickButton"</span>);
+    
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">updateMessage</span>(<span class="hljs-params"></span>) {
+      messageElement.<span class="hljs-property">textContent</span> = <span class="hljs-string">"Button was clicked!"</span>;
+    }
+    
+    clickButton.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">"click"</span>, updateMessage);
+
+</code></pre>
+</div>
+</div>
+ </div>
+</section>
+
+<section class="Java content-info RSP-Contect">
+ 		<div class="left-info">
+<h1>Java</h1>
+<p> Java: Venture into the world of Java programming for robust applications.</p>
+
+<a href=""><button class="Learn-btn locked">Learn Java <i class="fa-solid fa-lock "></i></button></a>
+
+</div>
+ <div class="RSP-code notranslate htmlHigh rsp-Java-info">
+ 	<h3 class="index">Java Example:</h3>
+ <div class="examples-code">
+<pre><code class="!whitespace-pre hljs language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SumCalculator</span> {
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-comment">// Declare and initialize two numbers</span>
+        <span class="hljs-type">int</span> <span class="hljs-variable">num1</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span>;
+        <span class="hljs-type">int</span> <span class="hljs-variable">num2</span> <span class="hljs-operator">=</span> <span class="hljs-number">10</span>;
+        
+        <span class="hljs-comment">// Calculate the sum of the two numbers</span>
+        <span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> num1 + num2;
+        
+        <span class="hljs-comment">// Display the result</span>
+        System.out.println(<span class="hljs-string">"The sum of "</span> + num1 + <span class="hljs-string">" and "</span> + num2 + <span class="hljs-string">" is: "</span> + sum);
+    }
+}
+</code>
+</pre>
+       </div>
+   			</div>
+
+ </section>
+
+
+
+ 	
+	 	<section class="python content-info RSP-Contect">
+	<div class="left-info">
+<h1>Python</h1>
+<p> Python: Embrace the versatile and beginner-friendly programming language.</p>
+
+<a href="#"><button class="Learn-btn locked">Learn Python <i class="fa-solid fa-lock "></i></button></a>
+</div>
+ <div class="RSP-code notranslate rsp-Python-info">
+ 	<h3 class="index">Python Example:</h3>
+<div class="examples-code">
+    <pre><code class="!whitespace-pre hljs language-python"> <span class="hljs-built_in">print</span>(<span class="hljs-string">"Hello, World!"</span>)
+	<span class="hljs-keyword">def</span> <span class="hljs-title function_">factorial</span>(<span class="hljs-params">n</span>):
+    <span class="hljs-keyword">if</span> n == <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> n == <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> n * factorial(n - <span class="hljs-number">1</span>)
+
+num = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Enter a positive integer: "</span>))
+
+<span class="hljs-keyword">if</span> num &lt; <span class="hljs-number">0</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Factorial is not defined for negative numbers."</span>)
+<span class="hljs-keyword">else</span>:
+    result = factorial(num)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"Factorial of <span class="hljs-subst">{num}</span> is <span class="hljs-subst">{result}</span>."</span>)
+</code></pre>
+ 
+
+
+</div>
+ </div>   
+ </section>
+
+<section class="content-info rsp-basic Computer-Basics RSP-Contect">
+<div class="left-info">
+<h1 style="font-size:30px;">Computer Basics</h1>
+<p>Computer Basics: Lay a solid foundation with the fundamentals of computers.
+</p>
+<a href="https://computer.rspeducation.in/Computer/"><button class="Learn-btn">Learn Basics</button></a>
+</div>
+ <div class="RSP-code notranslate">
+ 	<h3 class="index">Index of Computer Basics</h3>
+ 	 <div class="examples-index">
+		<span>Introduction To Computer</span><br>
+		<span>Imput Output Devices</span><br>
+		<span>Central Process Unit</span><br>
+		<span>Secondary Storage</span><br>
+		<span>Software and Hardware</span><br>
+		 <span>Control Panel</span><br> 
+		<span>Operating System(OS)</span><br>
+		<span>MS-Windows 7</span><br>    
+		<span>Part of Windows</span><br>
+		<span>my Computer</span><br>
+		<span>Type Of Computer</span><br>
+		<span>Cut, Copy, Paste</span><br>
+		<span>Notepad</span><br>
+		<span>Ms Ponit.........etc</span><br>  
+   </div>
+</div>
+</section>
+
+
+<section class="content-info  MS-Word RSP-Contect">
+
+<div class="left-info">
+<h1 style="font-size:30px;">MS Word</h1>
+<p>MS Word: Unlock the art of word processing with Microsoft Word, creating documents that are polished and professional.</p>
+
+<a href="https://computer.rspeducation.in/Microsoft_Word/Part2"><button class="Learn-btn">Start Learn</button></a>
+</div>
+
+ <div class="RSP-code notranslate rsp-ms-word-info">
+ 	<h3 class="index">Index</h3>
+ 	 <div class="examples-index">
+		<span>Microsoft Word</span><br>
+		<span>Part of the MS Word Screen</span><br>
+		<span>Creatinng a Document</span><br>
+		<span>File Operations</span><br>
+		<span>Editing The Text</span><br>
+		<span>Formattig The Text</span><br>
+		<span>Function, Icon, Shortcut keys</span><br>
+		<span>Exiting MS Word</span><br>
+		<span>Paragraph Options</span><br>
+		<span>Borders And Shading</span><br>
+		<span> Bullets Ad Numbering</span><br>
+		<span>Find, Replace &amp; Go To </span><br>  
+		<span>Auto correct......etc</span><br>    
+ </div>
+</div>
+</section>
+
+<section class="content-info rsp-ms-ppt RSP-Contect">
+<div class="left-info">
+<h1 style="font-size:30px;">MS Power Point</h1>
+<p>PowerPoint (PPT): Master the art of visual storytelling using Microsoft PowerPoint, creating captivating presentations that leave a lasting impact.</p>
+
+<a href="https://computer.rspeducation.in/Microsoft_Power_Point/"><button class="Learn-btn ">Start Learn  </button></a>
+</div>
+
+ <div class="RSP-code notranslate rsp-ms-ppt-info">
+ 	<h3 class="index">Index</h3>
+ 	 <div class="examples-index">
+		<span>Introduction of PPT</span><br>
+		<span>Gettinng ahead with PPT</span><br>
+		<span>Slides layouts</span><br>
+		<span>Editing a slide</span><br>
+		<span>Working with slide</span><br>
+		<span>Slide background</span><br>
+		<span>Applying themes</span><br>
+		<span>Powerpoint views</span><br>
+		<span>Working with Objects</span><br>
+		<span>Inset Numbers list</span><br>
+		<span>Create table &amp; Charts</span><br>
+		<span>Slide Show &amp; Aimations</span><br>  
+		<span>Sound, Music &amp; video......etc</span><br>    
+ </div>
+</div>
+</section>
+
+
+
+
+
+
+ <!-- Footer -->
+    <footer>
+    <svg style="background-color:#282A35; margin: -10px 0 0 -10px; " width="100%" height="90"  viewBox="0 0 100 100" preserveAspectRatio="none">
+  <path id="wavepath" d="M0,0  L100,0C35,150 35,0 0, 100 110z" fill="lightblue"></path>
+</svg>
+        <div class="footer-container">
+            <div class="social-icons" title="Follow Us for more updates">
+                <ul id="socialLinksList">
+                    <h3>Follow Us</h3>
+                </ul>
+            </div>
+            <div class="features">
+                <ul id="topTutorialsList" title="Learn our Top Tutorials">
+                    <h3>Top Tutorials</h3>
+                </ul>
+            </div>
+            <div class="features">
+                <ul id="ourWebsitesList" title="RSP Educations">
+                    <h3>RSP Educations</h3>
+                </ul>
+            </div>
+            <div class="contact" title="contact us for help!"></div>
+        </div>
+    </footer>
+<footer class="footer rspeducation-policy">
+    <p>&copy; <span id="Copyright"></span></p>
+    <ul id="footerLinks"></ul>
+</footer>
+
+<a href="#" class="up-arrow" ><i class="fa-solid fa-arrow-up fa-bounce" title="Go Top"></i></a>
+
+
+							<!--Javascript Links-->
+
+		<script type="text/javascript" src="https://files.rspeducation.in/main_rsp.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var lockedBtns = document.querySelectorAll('.locked');
+
+            lockedBtns.forEach(function(lockedBtn) {
+                lockedBtn.addEventListener('click', function() {
+                    var title = this.closest('.content-info').querySelector('h1').textContent;
+                    alert(" " + title + " will be unlock soon.");
+                });
+            });
+        });
+
+    </script>
+
+
+
+
+<!-- Add this script to your HTML file -->
+<script>
+// JavaScript Copyright function for Get the current year ----------------------------------------
+// Sample data for demonstration
+const searchData = [
+  { title: "HTML", url:"Privacy_Policy.html" },
+  { title: "CSS", url: "CSS.html" },
+  { title: "Java", url: "page3.html" },
+  { title: "What is Python", url: "page4.html" },
+  { title: "Python", url: "page4.html" },
+  { title: 'Introduction To Computer', url: 'https://computer.rspeducation.in/Computer/' },
+  { title: 'Imput Devices', url: 'Input.html' },
+  { title: 'Output Devices', url: 'Output.html' },
+  { title: 'Central Process Unit', url: 'CPU.html' },
+  { title: 'Secondary Storage', url: 'Secondary_Storage.html' },
+  { title: 'Software and Hardware', url: 'Softwares_and_Hardware.html' },
+  { title: 'Data Representation', url: 'Data_Representation.html' },
+  { title: 'Primary Storage', url: 'Primary_Storage.html' },
+  { title: 'Micro Processor', url: 'Micro_Processor.html' },
+  { title: 'Type Of Computer', url: 'Type_Of_Computer.html' },
+  { title: 'Generation Of Computer', url: 'Generation_Of_Computer.html' },
+  { title: 'Operating System(OS)', url: 'Operating_system.html' },
+  { title: 'MS-Windows 7', url: 'MS-Windows_7.html' },
+  { title: 'Mouse', url: 'Mouse.html' },
+  { title: 'Parts of Window 7', url: 'Parts_of_Window_7.html' },
+  { title: 'Setting Date-Time', url: 'Setting_Date_Time.html' },
+  { title: 'Paint', url: 'Paint.html' },
+  { title: 'Notepad', url: 'Notepad.html' },
+  { title: 'Calculator', url: 'Calculator.html' },
+  { title: 'Control Panel', url: 'Control_Panel.html' },
+  { title: 'Personalizing The Computer', url: 'Personalsing_The_Computer' },
+  { title: 'Cut and Paste', url: 'Cut_and_Paste.html' },
+  { title: 'Files and Folders', url: 'Files_and_Folder.html' },
+  { title: 'My Computer', url: 'My_Computer.html' },
+  { title: 'Windows Explorer', url: 'Window_Explorer.html' },
+  { title: 'Create A Folder', url: 'Create_A_Folder.html' },
+  { title: 'Taskbar', url: 'Taskbar.html' }
+
+];
+
+
+// Function to perform search
+function performSearch() {
+  const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+  const resultsList = document.getElementById("resultsList");
+
+  // Clear previous results
+  resultsList.innerHTML = "";
+
+  // Filter data based on search term
+  const filteredData = searchData.filter(item => {
+    return item.title.toLowerCase().includes(searchTerm);
+  });
+
+  // Display search results
+  filteredData.forEach(item => {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = item.url;
+    link.textContent = item.title;
+    li.appendChild(link);
+    resultsList.appendChild(li);
+  });
+}
+
+// Event listener for search input
+document.getElementById("searchInput").addEventListener("keyup", performSearch);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
